@@ -1,0 +1,5 @@
+Name: ApprovedFood
+
+What we do: Cooking Recipes. Recipes can vary from type of food, price range, country of origin. Recipes made and approved by professional five star chefs all around the world.  
+
+Owners: Morgan Dablemont, Kaden Cannon
