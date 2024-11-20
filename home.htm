@@ -1,29 +1,183 @@
-<div class="header">
-  <h1>Approved Food</h1>
-  <p>Welcome to Approved Food, where you can find any food recipe created. The only catch is everything is five star rated, by professional five star chefs around the world! 
-</p>
-</div>
-<style>
-.header {
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-  font-size: 30px;
-}
-.item1 {
-   padding: 5px;
-  text-align: center;
-
-  color: Red;
-  font-size: 15px;
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #AFE1AF;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .hero-section {
+            background-color: #f4f4f4;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .product-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: #fafafa;
+        }
+        .product-row {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .product-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            width: 280px;
+            margin: 10px;
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s;
+            text-decoration: none; /* Removes underline */
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .product-info h3 {
+            margin: 10px 0;
+        }
+        .product-info p {
+            color: #666;
+        }
+        .product-info .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #000;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
 <body>
-<div class="item1">
-<p><a href="default.asp" target="_blank">This is a link</a></p>
-</div>
 
+    <!-- Header -->
+    <header>
+        <h1>Welcome to ApprovedFood</h1>
+        <p>Our Digital Cook lets you buy real five star recipes approved by professional chefs around the world!</p>
+    </header>
 
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h2>Discover Recipes From the Countries Below</h2>
+        <p>Find the best products for your needs, all in one place.</p>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="product-section">
+        
+        <!-- First Row of Products -->
+        <div class="product-row">
+            <a href="https://example.com/product1" class="product-card">
+                <img src="https://via.placeholder.com/280x200" alt="Product 1" class="product-image">
+                <div class="product-info">
+                    <h3>France</h3>
+                    <p>Five Star Recipes From France.</p>
+                    <p class="price">$10.00-$19.99</p>
+                </div>
+            </a>
+            <a href="https://example.com/product2" class="product-card">
+                <img src="https://via.placeholder.com/280x200" alt="Product 2" class="product-image">
+                <div class="product-info">
+                    <h3>America</h3>
+                    <p>Perfect for home and office use.</p>
+                    <p class="price">$29.99</p>
+                </div>
+            </a>
+            <a href="https://example.com/product3" class="product-card">
+                <img src="https://via.placeholder.com/280x200" alt="Product 3" class="product-image">
+                <div class="product-info">
+                    <h3>China</h3>
+                    <p>Compact and efficient product.</p>
+                    <p class="price">$39.99</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Second Row of Products -->
+        <div class="product-row">
+            <a href="https://example.com/product4" class="product-card">
+                <img src="https://via.placeholder.com/280x200" alt="Product 4" class="product-image">
+                <div class="product-info">
+                    <h3>India</h3>
+                    <p>Ideal for quick tasks and convenience.</p>
+                    <p class="price">$24.99</p>
+                </div>
+            </a>
+            <a href="https://example.com/product5" class="product-card">
+                <img src="https://via.placeholder.com/280x200" alt="Product 5" class="product-image">
+                <div class="product-info">
+                    <h3>Spain</h3>
+                    <p>A versatile product for various uses.</p>
+                    <p class="price">$49.99</p>
+                </div>
+            </a>
+            <a href="https://example.com/product6" class="product-card">
+                <img src="https://via.placeholder.com/280x200" alt="Product 6" class="product-image">
+                <div class="product-info">
+                    <h3>Germany</h3>
+                    <p>Compact design with powerful features.</p>
+                    <p class="price">$59.99</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 ApprovedFood. All rights reserved.</p>
+    </footer>
 
 </body>
+</html>
